@@ -7,5 +7,7 @@
 </ion-header>
 
 <ion-content padding>
-  <color-picker [hexColor]="'#FF0000'" (colorChanged)="setColor($event)"(colorTouchStart)="colorTouchStart()" (colorTouchEnd)="colorTouchEnd()"></color-picker>
+  <color-picker [hexColor]="color" (colorChanged)="setColor($event)"(colorTouchStart)="colorTouchStart()" (colorTouchEnd)="colorTouchEnd()"></color-picker>
+
+  <div style="height: 100px; width: 100px;" [style.background-color]="color"></div>
 </ion-content>

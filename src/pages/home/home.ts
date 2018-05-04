@@ -13,5 +13,7 @@ export class HomePage {
 
   }
 
-  setColor(ev: any){ this.color = ev; }
+  setColor(ev: any){
+     this.color = ev; 
+  }
 }
